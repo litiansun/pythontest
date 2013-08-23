@@ -25,7 +25,7 @@ file.close()
 
 file=open('datatest','r')
 y=pickle.load(file)
-print y
+print y[1]
 
 import cv2.cv as cv
 import time
@@ -40,4 +40,6 @@ while True:
     if cv.WaitKey(10) == 27:
         break
 cv.DestroyAllWindows()
+
+print "love you"
    
